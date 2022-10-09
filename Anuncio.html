@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Descripcion</title>
+</head>
+<body>
+
+     <!--INICIA BARRA DE NAVEGACION-->
+     <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <!--CONTENEDOR-->
+        <div class="container-fluid">
+            
+            <!--PARA EL BOTON EN TELEFONOS-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+             <!--VISIBLE SOLO PARA LA PANTALLA PEQUENIA-->
+            <form class="d-block d-lg-none" role="search"> 
+                <input class="form-control form-control-lg me-2" type="search" placeholder="Search" aria-label="Search"> 
+            </form> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <!--FILA-->
+            <!--<div class="row">--> 
+
+                <!--COLUMNAS-->
+                <div class="col-2">
+                   
+                    <a class="navbar-brand " href="#"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">  
+                            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>  
+                          </svg>  
+                        Tienda CellPhone 
+                    </a>           
+                </div>
+                <div class="col">
+
+                    <!--VISIBLE SOLO PARA LA PANTALLA GRANDE-->
+                    <form class="d-none d-lg-block d-xxl-none ms-lg-5 ms-lg-0" role="search"> 
+                        <input class="form-control form-control-lg me-2" type="search" placeholder="Search" aria-label="Search"> 
+                    </form>  
+                </div>
+                <div class="col">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./index.html" class="btn btn-primary d-none d-lg-block ms-lg-5 mt-lg-2">Inicio</a> <!--GRANDE-->
+                            <a href="./index.html" class="nav-link d-block d-lg-none m-2">Inicio</a> <!--PEQUENIA-->
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Anuncio.html" class="nav-link d-block d-lg-none m-2">Nuevo Anuncio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Anuncio.html" class="btn btn-outline-primary d-none d-lg-block ms-lg-5 mt-lg-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"> 
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> 
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> 
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link d-block d-lg-none m-2">Carrita</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-primary position-relative d-none d-lg-block ms-lg-2 mt-lg-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16"> 
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/> 
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> 
+                                </svg>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    +1
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--FIN COLUMNAS-->
+            </div>
+
+            <!--FIN FILA-->
+            <!--</div>-->
+
+        <!--FIN CONTENEDOR-->    
+        </div>
+
+
+
+    <!--TERMINA BARRA DE NAVEGACION-->
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-0 col-lg-4 mt-5">
+                  <!--CARRUSEL-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./prueba.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./prueba.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./prueba.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            </div>
+            <div class="col col-lg-4">
+                <p class="mt-5 mx-5">Iphone 6 pantalla de 8 pulgadas, 64Gb interno,
+                   2Gb de Ram, Sòlo Banda Tigo, Nuevo. 
+                </p>
+                <p class="mx-5">
+                    $235.00
+                </p>
+                <button type="button" class="btn btn-primary mx-5 my-5 d-none d-lg-block d-xxl-none">Comprar</button>
+
+                <fieldset  class="border rounded-3 p-3 ms-5 my-5">
+                    <legend  class="float-none w-auto px-3"> </legend>
+                    <div class="input-group">
+                        <h6>Vendedor: Juan Perez<h6>
+                        <h6 class="ms-1 ms-lg-5">Telefono: 7374-2312</h6>
+                    </div>
+                </fieldset>
+              
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block d-xxl-none">
+            <div class="row justify-content-center mt-3">
+                <div class="col-2">
+                    <h1>DESCRIPCION</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 my-3">
+                <fieldset  class="border rounded-3 p-3 ">
+                    <p>Estado: Nuevo</p>
+                    <p>Marca: Iphone</p>
+                    <p>Modelo: 6 plus</p>
+                    <p>Pantalla: 7 pulgadas</p>
+                    <p>Sistema: Ios</p>
+                    <p>Rom: 64GB</p>
+                    <p>Ram: 2GB</p>
+                </fieldset>
+            </div>
+            <div class="col-12 col-lg-4">
+                <fieldset  class="border rounded-3 p-3 my-3">
+                    Telefono en muy buenas condiciones, tiene
+                    dos cámaras, la caja esta abierta, pero con
+                    muy poco uso, practicamente nuevo, la
+                    compañia con la que estaba es Tigo, asi que el
+                    chip debe ser tigo, viene con su caja original y
+                    con todos sus accesorios. Puedo mandar más
+                    fotos si desea por whatsapp.
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-lg-none d-xxl-block">
+        <div class="container-fluid position-relative sticky-bottom mb-5">
+            <div class="row justify-content-center ">
+                <div class="col-7">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Inicio</a>
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
