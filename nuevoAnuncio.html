@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Nuevo Anuncio</title>
+    </head>
+    <body class="bg-light">
+
+        <div class="container-fluid ">
+
+            <div class="d-none d-lg-block d-xxl-none">
+                <div class="row justify-content-center">
+                    <div class="col-4 my-4">
+                        <h1><em>NUEVO ANUNCIO</em></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-7">
+
+                    <fieldset  class="border border-dark rounded-3 p-3 mb-3 col-10">
+                        <legend  class="float-none w-auto px-3"> </legend>
+                        <div class="input-group">
+                            <span class="input-group-text me-3" id="basic-addon1">Ordenar por:</span>
+                            <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nuevo" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Nuevo</label>
+                            </div>
+                            <div class="form-check form-check-inline mt-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="usado" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Usado</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Marca:</span>
+                            <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
+                                <input type="text" class="form-control" id="marca">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Modelo:</span>
+                            <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
+                                <input type="text" class="form-control" id="modelo">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Pantalla:</span>
+                            <div class="form-check form-check-inline mt-3 me-5 ms-xl-1 col-2">
+                                <input type="number" class="form-control" id="pantalla">
+                            </div>
+                            <label class="mt-4" for="pantalla">Pulgadas</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Sistema:</span>
+                            <div class="form-check form-check-inline mt-3 me-5 ms-xl-1 col-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Ios</option>
+                                    <option value="1">Android</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Rom:</span>
+                            <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
+                                <input type="text" class="form-control" id="ram">
+                            </div>
+                            <label class="mt-4" for="ram">Almacenamiento Interno</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text me-3 mt-2" id="basic-addon1">Ram:</span>
+                            <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
+                                <input type="text" class="form-control" id="modelo">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <div class="col-5">
+                    
+                    <div class="row">
+                        <label for="titulo" class="form-label"><strong>Titulo breve del anuncio</strong></label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Iphone 6 pantalla de 8 pulgadas, 64GB internor.">
+
+                        <div class="input-group mt-3">
+                            <label for="Vendedor" class="form-label "><strong>Vendedor:</strong></label>
+                            <div class="form-check form-check-inline mx-5 ms-xl-1">
+                                <input type="text" class="form-control" id="Vendedor">
+                            </div>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="telefono" class="form-label me-2"><strong>Telefono:</strong></label>
+                            <div class="form-check form-check-inline mx-5 ms-xl-1">
+                                <input type="number" class="form-control" id="telefono">
+                            </div>
+                        </div>
+
+                        <p><label for="descripcion" class="form-label my-4"><strong>DESCRIPCION</strong></label></p>
+                        <textarea  id="descripcion" name="w3review" rows="8" cols="60">
+                        </textarea>
+                        </div>
+
+                    <div class="row mt-2">
+                        
+                        <div class="justify-content-center d-flex">
+                            <fieldset  class="border border-dark rounded-3 p-3 b-2"s>
+                                <legend  class="float-none w-auto px-3">PRECIO</legend>
+                                <input type="number" class="form-control" id="precio">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="justify-content-center d-flex mt-5 mb-5">
+                            <button type="button" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                                Cancelar</button>
+                            <button type="button" class="btn btn-primary ms-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+                                    <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+                                </svg>
+                                    Crear</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+           
+
+        </div>
+        
+        <script>
+
+            document.getElementById('file').onchange = (e)=>{
+                let reader = new FileReader();
+                reader.readAsDataURL(e.target.files[0]);
+                reader.onload= ()=>{
+                    let preview=document.getElementById('preview');
+                    imagen= document.createElement('img');
+                    imagen.src=reader.result;
+                    console.log(imagen);
+                    imagen.style.width="200px"
+                    preview.append(imagen);
+                    console.log(preview);
+
+                }
+            };
+
+        </script>
+    </body>
+</html>
