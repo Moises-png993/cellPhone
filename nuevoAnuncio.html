@@ -20,7 +20,7 @@
             </div>
 
             <div class="row">
-                <div class="col-7">
+                <div class="col-7 d-none d-lg-block d-xxl-none">
 
                     <fieldset  class="border border-dark rounded-3 p-3 mb-3 col-10">
                         <legend  class="float-none w-auto px-3"> </legend>
@@ -78,9 +78,70 @@
                         </div>
 
                     </fieldset>
+
+                    <fieldset  class="border border-dark rounded-3 p-3 mb-3 col-11">
+                        <legend  class="float-none w-auto px-3">Imagenes</legend>
+                        <div class="row">
+                            <div class="col-2 justify-content-center">
+
+                                <input type="file" class="form-control d-none" id="inputGroupFile01">
+
+                                <button type="button" class="btn btn-primary d-grid gap-2 mb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                </button>
+
+                                <button type="button" class="btn btn-secondary mt-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                            <div class="col ">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">N</th>
+                                        <th scope="col">Tamaño</th>
+                                        <th scope="col">Tipo</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>145 kb</td>
+                                        <td>jpg</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>145 kb</td>
+                                        <td>png</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>145 kb</td>
+                                        <td>png</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>145 kb</td>
+                                        <td>jpg</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col">
+                                <img src="./prueba.jpeg" class="img-fluid" alt="podria ser un telefono">
+                            </div>
+                        </div>
+
+                    </fieldset>
+
                 </div>
-                <div class="col-5">
-                    
+                <div class="col col-lg-5">         
                     <div class="row">
                         <label for="titulo" class="form-label"><strong>Titulo breve del anuncio</strong></label>
                         <input type="text" class="form-control" id="titulo" placeholder="Iphone 6 pantalla de 8 pulgadas, 64GB internor.">
@@ -129,8 +190,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
            
 
