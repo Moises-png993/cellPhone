@@ -20,15 +20,18 @@
                     <div class="container-fluid">
                         
                         <!--PARA EL BOTON EN TELEFONOS-->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                    
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
                         </button>
-
                         <!--VISIBLE SOLO PARA LA PANTALLA PEQUENIA-->
                         <form class="d-block d-lg-none" role="search"> 
-                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control form-control-lg me-2" id="inputEmail5" placeholder=" &#xf002; Search" aria-label="Search">
-                        </form> 
-
+                            <div class="input-group">
+                               <!-- <span style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" class="input-group-text" id="basic-addon1">&#xf002;</span>-->
+                                <input  type="text" class="form-control form-control-lg" id="inputEmail5" placeholder=" Search" aria-label="Search">
+                            </div>
+                        </form>
+                        
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!--FILA-->
                         <!--<div class="row">--> 
@@ -47,7 +50,10 @@
 
                                 <!--VISIBLE SOLO PARA LA PANTALLA GRANDE-->
                                 <form class="d-none d-lg-block d-xxl-block ms-lg-5 ms-lg-0 " role="search"> 
-                                    <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control form-control-lg me-2" id="inputEmail5" placeholder=" &#xf002; Search" aria-label="Search">
+                                    <div class="input-group">
+                                        <span style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" class="input-group-text" id="basic-addon1">&#xf002;</span>
+                                        <input  type="text" class="form-control form-control-lg me-2" id="inputEmail5" placeholder=" Search" aria-label="Search">
+                                    </div>
                                 </form>  
                             </div>
                             <div class="col">
