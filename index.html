@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/2a593723d7.js" crossorigin="anonymous"></script>
     <title>cellPhone</title>
 </head>
 <body >
@@ -24,7 +25,7 @@
 
                         <!--VISIBLE SOLO PARA LA PANTALLA PEQUENIA-->
                         <form class="d-block d-lg-none" role="search"> 
-                            <input class="form-control form-control-lg me-2" type="search" placeholder="Search" aria-label="Search"> 
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control form-control-lg me-2" id="inputEmail5" placeholder=" &#xf002; Search" aria-label="Search">
                         </form> 
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,8 +45,8 @@
                             <div class="col">
 
                                 <!--VISIBLE SOLO PARA LA PANTALLA GRANDE-->
-                                <form class="d-none d-lg-block d-xxl-block ms-lg-5 ms-lg-0" role="search"> 
-                                    <input class="form-control form-control-lg me-2" type="search" placeholder="Search" aria-label="Search"> 
+                                <form class="d-none d-lg-block d-xxl-block ms-lg-5 ms-lg-0 " role="search"> 
+                                    <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control form-control-lg me-2" id="inputEmail5" placeholder=" &#xf002; Search" aria-label="Search">
                                 </form>  
                             </div>
                             <div class="col">
@@ -216,39 +217,32 @@
                 <!--Precio y hasta para PC-->
                 <div class="d-none d-lg-block d-xxl-block">
                     <div class="row justify-content-center">
-                        <div class="col-5 mb-5">
+                        <div class="col-6 col-xl-5 col-xxl-4 mb-5">
                             <fieldset  class="border rounded-3 p-3">
                                 <legend  class="float-none w-auto px-3"> </legend>
-                                <div class="input-group ">
+                                <div class="btn-group ">
                                     <span class="input-group-text" id="basic-addon1">Precio:</span>
                                     <input type="number" class="form-control me-2" placeholder="$" aria-label="precio" aria-describedby="basic-addon1">
                                     <span class="input-group-text" id="basic-addon1">Hasta:</span>
                                     <input type="number" class="form-control" placeholder="$" aria-label="hasta" aria-describedby="basic-addon1">
-                                </div>
                             </fieldset>
                         </div>
-
-                        <div class="col-5">
-                            <fieldset  class="border rounded-3 p-3 mb-3">
+                        <div class="col-6 col-xl-5 col-xxl-4">
+                            <fieldset  class="border rounded-3 p-3">
                                 <legend  class="float-none w-auto px-3"> </legend>
-                                <div class="input-group">
-                                    <span class="input-group-text me-3" id="basic-addon1">Ordenar por:</span>
-
-                                    <div class="form-check form-check-inline mt-3 mx-5 ms-xl-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                                            </svg> Precio</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text me-3" id="basic-addon1">Ordenar por:</span>
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                          </svg> Precio</label>
+                                    
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                        <label class="btn btn-outline-primary ms-3" for="btnradio2">Fecha</label>
                                     </div>
-
-                                    <div class="form-check form-check-inline mt-3">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Fecha</label>
-                                    </div>
-                                </div>
                             </fieldset>
                         </div>
+
                     </div>
                 </div>
 
@@ -392,8 +386,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -402,8 +396,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -412,8 +406,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -422,8 +416,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -435,8 +429,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -445,8 +439,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -455,8 +449,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
@@ -465,8 +459,8 @@
                         <div class="card">
                           <a href="./Descripcion.html"><img src="./prueba.jpeg" class="card-img-top" alt="Imagen de telefono"></a>
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title text-center">$132.00</h5>
+                            <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
                           </div>
                         </div>
                     </div>
